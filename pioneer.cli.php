@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 	/* pioneer.cli.php :: Pioneer VSX-1022-K (Future) CLI Tool
 	 * Part of Quinn Ebert's "Pioneer Rebel" Software Project
@@ -18,12 +17,12 @@
 	
 	require 'pioneer.lib.php';
 	
-	//$olA = pvRebel_getVolVal('192.168.1.Xyz');
-	//$olB = pvRebel_getVolPct('192.168.1.Xyz');
-	//$olC = pvRebel_getMuting('192.168.1.Xyz');
-	//$olD = pvRebel_getSource('192.168.1.Xyz');
-	//echo("VAL: $olA\nPCT: $olB\n");
-	/*if ($olC!==false) {
+	$olA = pvRebel_getVolVal('192.168.0.145');
+	$olB = pvRebel_getVolPct('192.168.0.145');
+	$olC = pvRebel_getMuting('192.168.0.145');
+	$olD = pvRebel_getSource('192.168.0.145');
+	echo("VAL: $olA\nPCT: $olB\n");
+	if ($olC!==false) {
 		// Just remember, 1022-K uses '0' for muted and '1' for un-muted,
 		// reverse of what you might expect:
 		if ( $olC ) {
@@ -31,6 +30,7 @@
 		} else {
 			echo("The receiver *is* muting!\n");
 		}
-	}*/
-	//echo("$olD\n");
+	}
+    echo("<br />");
+	echo("$olD\n");
 ?>

@@ -24,7 +24,7 @@
 	// Send a command, with optional prefixed or suffixed parameter, to the 1022-K
 	// Returns corresponding controller response on OK or false (boolean) on error
 	function pvRebel_SEND_CMD($address,$command='PO',$parameter=false,$param_first=true) {
-		$fp = fsockopen($address, 8102, $errno, $errstr, 30);
+		$fp = fsockopen($address, 23, $errno, $errstr, 30);
 		if (!$fp) {
 			echo __FUNCTION__."() ERROR: $errstr ($errno), planned command was \"$command\"!\n";
 			return false;
@@ -140,7 +140,7 @@
 		$inNames["FN41"] = "PANDORA";
 		$inNames["FN44"] = "M.SERVER";
 		$inNames["FN45"] = "FAVORITE";
-		$out = pvRebel_SEND_CMD($address,'?FN');
+		$out = pvRebel_SEND_CMD($address,'?F');
 		if (! $out) return false;
 		$val = trim($out);
 		return $inNames[$val];

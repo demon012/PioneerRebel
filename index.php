@@ -1,9 +1,12 @@
 <html>
-	<head>
-		<title>Pioneer Rebel</title>
-	</head>
-	<body>
-		<h1>Pioneer Rebel</h1>
-		<p>Please read <a href="README.md">README.md</a> for help with getting started.</p>
-	</body>
+    <head>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2'></script>
+        <script type="text/javascript" src="js/jquery.hotkeys.js"></script>
+        <script type="text/javascript" src="js/remote.js"></script>
+        <script type="text/javascript">
+        initialise();
+        </script>
+    </head>
+    <body>
+    </body>
 </html>
