@@ -8,13 +8,16 @@
         </script>
     </head>
     <body>
-        volume down: j
-        volume up: k
-        mute: .
-        unmute: ,
-        power off: [
-        power on: ]
-        source - raspberry pi: r
-        source - tv: t
+        <table>
+            <tr>
+                <td>volume down: j</td><td>volume up: k</td><td>mute: .</td><td>unmute: ,</td>
+            </tr>
+            <tr>
+                <td>power off: [</td><td>power on: ]</td>
+            </tr>
+            <tr>
+                <td>source - raspberry pi: r</td><td>source - tv: t</td>
+            </tr>
+        </table>
     </body>
 </html>
