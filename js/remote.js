@@ -3,19 +3,19 @@ function initialise()
         $(document).keydown(function(e){
             if( e.keyCode == 74 ) // j
             {
-                volume_down("jim-vsx922");
+                volume_down("downstairs");
             }
             else if( e.keyCode == 75) // k
             {
-                volume_up("jim-vsx922");
+                volume_up("downstairs");
             }
             else if( e.keyCode == 188) // ,
             {
-                mute("jim-vsx922", true);
+                mute("downstairs", true);
             }
             else if( e.keyCode == 190) // .
             {
-                mute("jim-vsx922", false);
+                mute("downstairs", false);
             }
             else if( e.keyCode == 221) // ]
             {
@@ -27,11 +27,11 @@ function initialise()
             }
             else if( e.keyCode == 82) // r
             {
-                source("jim-vsx922", "pi");
+                source("downstairs", "pi");
             }
             else if( e.keyCode == 84) // t
             {
-                source("jim-vsx922", "tv");
+                source("downstairs", "tv");
             }
             else
             {
