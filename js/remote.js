@@ -17,6 +17,10 @@ function initialise()
             {
                 mute("jim-vsx922", false);
             }
+            else if( e.keyCode == 220) // ]
+            {
+                power("jim-vsx922", true);
+            }
             else if( e.keyCode == 219) // [
             {
                 power("jim-vsx922", false);

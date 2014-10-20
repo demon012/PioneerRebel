@@ -8,5 +8,13 @@
         </script>
     </head>
     <body>
+        volume down: j
+        volume up: k
+        mute: .
+        unmute: ,
+        power off: [
+        power on: ]
+        source - raspberry pi: r
+        source - tv: t
     </body>
 </html>
