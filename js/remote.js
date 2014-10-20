@@ -17,13 +17,13 @@ function initialise()
             {
                 mute("jim-vsx922", false);
             }
-            else if( e.keyCode == 220) // ]
+            else if( e.keyCode == 221) // ]
             {
-                power("jim-vsx922", true);
+                power("downstairs", true);
             }
             else if( e.keyCode == 219) // [
             {
-                power("jim-vsx922", false);
+                power("downstairs", false);
             }
             else if( e.keyCode == 82) // r
             {
@@ -43,10 +43,10 @@ function initialise()
 /*
  * Volume
  */
-function volume_down(device)
+function volume_down(location)
 {
     $.ajax({
-            url: 'volume_down.php?device=' + device,
+            url: 'volume_down.php?location=' + location,
                 type: "GET",
                 dataType: "html",
                 success: function(data)
@@ -55,10 +55,10 @@ function volume_down(device)
                 }
     });
 }
-function volume_up(device)
+function volume_up(location)
 {
     $.ajax({
-            url: 'volume_up.php?device=' + device,
+            url: 'volume_up.php?location=' + location,
                 type: "GET",
                 dataType: "html",
                 success: function(data)
@@ -67,10 +67,10 @@ function volume_up(device)
                 }
     });
 }
-function mute(device, bool)
+function mute(location, bool)
 {
     $.ajax({
-            url: 'volume_mute.php?device=' + device + '&mute=' + bool,
+            url: 'volume_mute.php?location=' + location + '&mute=' + bool,
                 type: "GET",
                 dataType: "html",
                 success: function(data)
@@ -83,10 +83,10 @@ function mute(device, bool)
 /*
  * Power
  */
-function power(device, bool)
+function power(location, bool)
 {
     $.ajax({
-            url: 'power.php?device=' + device + '&power=' + bool,
+            url: 'power.php?location=' + location + '&power=' + bool,
                 type: "GET",
                 dataType: "html",
                 success: function(data)
@@ -98,10 +98,10 @@ function power(device, bool)
 /*
  * Source
  */
-function source(device, source)
+function source(location, source)
 {
     $.ajax({
-            url: 'source.php?device=' + device + '&source=' + source,
+            url: 'source.php?location=' + location + '&source=' + source,
                 type: "GET",
                 dataType: "html",
                 success: function(data)
