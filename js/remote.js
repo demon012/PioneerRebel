@@ -1,6 +1,6 @@
 var locations = {
-    'upstairs': 'jim-vsx922.internal',
-    'downstairs': 'alan-vsx922.internal'
+    'downstairs': 'jim-vsx922.internal',
+    'upstairs': 'alan-vsx922.internal'
 };
 
 function initialise()
