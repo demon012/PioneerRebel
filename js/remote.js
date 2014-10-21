@@ -40,10 +40,10 @@ function initialise()
         {
             source(locations[location], "tv");
         }
-        else
-        {
-            alert("received " + e.keyCode);
-        }
+        // else
+        // {
+        //     alert("received " + e.keyCode);
+        // }
     });
 }
 
