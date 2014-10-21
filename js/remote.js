@@ -25,7 +25,6 @@ function initialise()
         }
         else if( e.keyCode == 221) // ]
         {
-            alert(locations[location]);
             power(locations[location], true);
         }
         else if( e.keyCode == 219) // [
@@ -50,10 +49,10 @@ function initialise()
 /*
  * Volume
  */
-function volume_down(location)
+function volume_down(device)
 {
     $.ajax({
-        url: 'volume_down.php?location=' + location,
+        url: 'volume_down.php?device=' + device,
         type: "GET",
         dataType: "html",
         success: function(data)
@@ -62,10 +61,10 @@ function volume_down(location)
         }
     });
 }
-function volume_up(location)
+function volume_up(device)
 {
     $.ajax({
-        url: 'volume_up.php?location=' + location,
+        url: 'volume_up.php?device=' + device,
         type: "GET",
         dataType: "html",
         success: function(data)
@@ -74,10 +73,10 @@ function volume_up(location)
         }
     });
 }
-function mute(location, bool)
+function mute(device, bool)
 {
     $.ajax({
-        url: 'volume_mute.php?location=' + location + '&mute=' + bool,
+        url: 'volume_mute.php?device=' + device + '&mute=' + bool,
         type: "GET",
         dataType: "html",
         success: function(data)
@@ -90,10 +89,10 @@ function mute(location, bool)
 /*
  * Power
  */
-function power(location, bool)
+function power(device, bool)
 {
     $.ajax({
-        url: 'power.php?location=' + location + '&power=' + bool,
+        url: 'power.php?device=' + device + '&power=' + bool,
         type: "GET",
         dataType: "html",
         success: function(data)
@@ -105,10 +104,10 @@ function power(location, bool)
 /*
  * Source
  */
-function source(location, source)
+function source(device, source)
 {
     $.ajax({
-        url: 'source.php?location=' + location + '&source=' + source,
+        url: 'source.php?device=' + device + '&source=' + source,
         type: "GET",
         dataType: "html",
         success: function(data)
