@@ -25,6 +25,7 @@ function initialise()
         }
         else if( e.keyCode == 221) // ]
         {
+            alert(locations[location]);
             power(locations[location], true);
         }
         else if( e.keyCode == 219) // [
@@ -39,10 +40,10 @@ function initialise()
         {
             source(locations[location], "tv");
         }
-        // else
-        // {
-        //     alert("received " + e.keyCode);
-        // }
+        else
+        {
+            alert("received " + e.keyCode);
+        }
     });
 }
 
